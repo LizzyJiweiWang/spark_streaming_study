@@ -49,7 +49,7 @@ object SentimentAnalysis {
 
     // save whole live twitter in trump data
     val tweets = stream.filter {t =>
-      val tags = t.getText.split(" ").filter(_.startsWith("Trump")).map(_.toLowerCase)
+      val tags = t.getText.split(" ").filter(_.startsWith(filters)).map(_.toLowerCase)
       tags.exists { x => true }
     }
 
