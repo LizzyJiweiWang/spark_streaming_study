@@ -16,7 +16,7 @@ object SentimentAnalysis {
     val consumerSecret = "RyCgiLKqP8kQjcwxJ8h9EQFzLGm3dL5n2eCTN9YpQ2RRYG3cd7"
     val accessToken = "931749427211128832-UJP8jUVAEieK0fP9mmHn5yuD4DiGi8M"
     val accessTokenSecret = "TAuHxwpL6FghEom8IDUtQTQPUeHik6nxhjmhzvyGlfGUk"
-    val filters = Seq("Trump")
+    val filters = Seq("apple")
 
   if (args.length > 4) {
       // get data from your setting
@@ -49,7 +49,7 @@ object SentimentAnalysis {
 
     // save whole live twitter in trump data
     val tweets = stream.filter {t =>
-      val tags = t.getText.split(" ").filter(_.startsWith("Trump")).map(_.toLowerCase)
+      val tags = t.getText.split(" ").filter(_.startsWith(filters(0))).map(_.toLowerCase)
       tags.exists { x => true }
     }
 
