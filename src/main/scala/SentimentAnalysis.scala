@@ -1,11 +1,14 @@
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.twitter._
 import org.apache.spark.SparkConf
+import org.apache.log4j.{Level, Logger}
 
 
 object SentimentAnalysis {
 
   def main(args: Array[String]) {
+    Logger.getLogger("org").setLevel(Level.ERROR)
+
 
     // Get Twitter Token and the filter words
     // By default, use my token and filter word is Trump
@@ -55,14 +58,15 @@ object SentimentAnalysis {
       val sentiment = SentimentAnalysisUtils.detectSentiment(status.getText)
 
       val tagss = status.getHashtagEntities.map(_.getText.toLowerCase)
-
+        println(status.getText,  tagss.toString(),sentiment.toString)
+      println("=======================================================")
       (status.getText,  tagss.toString(),sentiment.toString)
 
 
     }
 
     // save path
-    data.print()
+
     data.saveAsTextFiles("output/twitter_and_rating/t")
 
     ssc.start()
