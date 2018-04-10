@@ -63,7 +63,7 @@ object SentimentAnalysis {
 
     // save path
     data.print()
-    data.saveAsTextFiles("output/twitter_and_rating/","20000000")
+    data.saveAsTextFiles("output/twitter_and_rating/t")
 
     ssc.start()
     ssc.awaitTermination()
