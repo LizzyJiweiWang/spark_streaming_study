@@ -3,7 +3,7 @@ used for big data programming course
 ## 1. Login the Azure
 
 ### 1.1 Directly login the Azure 
-If you are in the school, you can directly aceess to Azure service using ssh:
+If you are in the school, you can directly access to Azure service using ssh:
 
 ```
   ssh MyFordhamIDname@10.223.36.8
@@ -33,12 +33,12 @@ And then please download the SentimenAnalysis files from github
 
 ## 3. start your sentiment project
 
-### 3.1 The sturcture of the program
+### 3.1 The structure of the program
 First, we go into the project:
 ```
   cd spark_streaming_study
 ```
-Now you get the whole project for sentimenanalysis, let us see the sturcture of the project:
+Now you get the whole project for sentimenanalysis, let us see the structure of the project:
 ```
   \
     build.sbt \\Don't change it, it concludes all the libaries and packages for this project
@@ -56,7 +56,7 @@ Now you get the whole project for sentimenanalysis, let us see the sturcture of 
 ```
 
 ### 3.2 Run your program
-How can we try to test our program? now go back to the root directroy of the project, where you can find the build.sbt file in there, and type:
+How can we try to test our program? now go back to the root directory of the project, where you can find the build.sbt file in there, and type:
 
 ```
   "run YourTwitterConsumerKey YourTwitterConsumerSecret YourTwitterAccessToken YourTwitterAccessTokenSecret  Apple"
