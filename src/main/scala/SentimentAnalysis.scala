@@ -12,16 +12,16 @@ object SentimentAnalysis {
 
     // Get Twitter Token and the filter words
     // By default, use my token and filter word is Trump
-    val consumerKey ="PD7ERIVkqJ3xsg1V0rwmu43ok"
-    val consumerSecret = "RyCgiLKqP8kQjcwxJ8h9EQFzLGm3dL5n2eCTN9YpQ2RRYG3cd7"
-    val accessToken = "931749427211128832-UJP8jUVAEieK0fP9mmHn5yuD4DiGi8M"
-    val accessTokenSecret = "TAuHxwpL6FghEom8IDUtQTQPUeHik6nxhjmhzvyGlfGUk"
-    val filters = Seq("Trump")
+    var consumerKey ="PD7ERIVkqJ3xsg1V0rwmu43ok"
+    var consumerSecret = "RyCgiLKqP8kQjcwxJ8h9EQFzLGm3dL5n2eCTN9YpQ2RRYG3cd7"
+    var accessToken = "931749427211128832-UJP8jUVAEieK0fP9mmHn5yuD4DiGi8M"
+    var accessTokenSecret = "TAuHxwpL6FghEom8IDUtQTQPUeHik6nxhjmhzvyGlfGUk"
+    var filters = Seq("Trump")
 
-  if (args.length > 4) {
+  if (args.length > 3) {
       // get data from your setting
-      val Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
-      val filters = args.takeRight(args.length - 4)
+      Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
+      filters = args.takeRight(args.length - 4)
     }
 
 
