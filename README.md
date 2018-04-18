@@ -15,7 +15,7 @@ The username and password is the same as the MyFordham.
 If you are out of school, you might be not able to access to Azure directly, but you can link to the Erdos first.
 
 ```
-  ssh YourErdosName@erdos.dsm.fordham.edu
+  ssh ErdosName@erdos.dsm.fordham.edu
 ```
 Once you login you now can login to the Azure
 
@@ -63,3 +63,4 @@ How we can try to test our program? now go back to the root directroy of the pro
 ```
 
 And you can change the "Apple" to any word you want.
+And you can get your twitter token in: https://apps.twitter.com/
