@@ -5,7 +5,7 @@ import org.apache.log4j.{Level, Logger}
 
 
 object SentimentAnalysis {
-
+  
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.ERROR)
 
@@ -20,7 +20,7 @@ object SentimentAnalysis {
 
   if (args.length > 3) {
       // get data from your setting
-      Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
+    val  Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
       filters = args.takeRight(args.length - 4)
     }
 
