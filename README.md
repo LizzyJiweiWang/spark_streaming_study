@@ -62,5 +62,5 @@ How we can try to test our program? now go back to the root directroy of the pro
   "run YourTwitterConsumerKey YourTwitterConsumerSecret YourTwitterAccessToken YourTwitterAccessTokenSecret  Apple"
 ```
 
-And you can change the "Apple" to any word you want.\n
+And you can change the "Apple" to any word you want.
 And you can get your twitter token in: https://apps.twitter.com/
