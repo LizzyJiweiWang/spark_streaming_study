@@ -3,7 +3,7 @@ used for big data programming course
 ## 1. Login the Azure
 
 ### 1.1 Directly login the Azure 
-If you are in the scool, you can directly aceess to Azure service using ssh:
+If you are in the school, you can directly aceess to Azure service using ssh:
 
 ```
   ssh MyFordhamIDname@10.223.36.8
@@ -12,7 +12,7 @@ If you are in the scool, you can directly aceess to Azure service using ssh:
 The username and password is the same as the MyFordham.
 
 ### 1.2 Use Erdos to log in the Azure
-If you are out of school, you might be not able to access to Azure directly, but you can link to the Erdos first.
+If you are not in school, you might be not able to access to Azure directly, but you can link to the Erdos first.
 
 ```
   ssh ErdosName@erdos.dsm.fordham.edu
@@ -56,7 +56,7 @@ Now you get the whole project for sentimenanalysis, let us see the sturcture of 
 ```
 
 ### 3.2 Run your program
-How we can try to test our program? now go back to the root directroy of the project, where you can find the build.sbt file in there, and type:
+How can we try to test our program? now go back to the root directroy of the project, where you can find the build.sbt file in there, and type:
 
 ```
   "run YourTwitterConsumerKey YourTwitterConsumerSecret YourTwitterAccessToken YourTwitterAccessTokenSecret  Apple"
