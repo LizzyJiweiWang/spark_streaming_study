@@ -59,7 +59,7 @@ Now you get the whole project for sentimenanalysis, let us see the structure of 
 How can we try to test our program? now go back to the root directory of the project, where you can find the build.sbt file in there, and type:
 
 ```
-  "run YourTwitterConsumerKey YourTwitterConsumerSecret YourTwitterAccessToken YourTwitterAccessTokenSecret  Apple"
+  sbt "run YourTwitterConsumerKey YourTwitterConsumerSecret YourTwitterAccessToken YourTwitterAccessTokenSecret  Apple"
 ```
 
 You can change the "Apple" to any word you want.<br/>
