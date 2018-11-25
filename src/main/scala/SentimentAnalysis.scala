@@ -5,7 +5,7 @@ import org.apache.log4j.{Level, Logger}
 
 
 object SentimentAnalysis {
-  
+
   def main(args: Array[String]) {
     Logger.getLogger("org").setLevel(Level.ERROR)
 
@@ -18,9 +18,9 @@ object SentimentAnalysis {
     var accessTokenSecret = "TAuHxwpL6FghEom8IDUtQTQPUeHik6nxhjmhzvyGlfGUk"
     var filters = Seq("Trump")
 
-  if (args.length > 3) {
+    if (args.length > 3) {
       // get data from your setting
-    val  Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
+      val  Array(consumerKey, consumerSecret, accessToken, accessTokenSecret) = args.take(4)
       filters = args.takeRight(args.length - 4)
     }
 
@@ -58,7 +58,7 @@ object SentimentAnalysis {
       val sentiment = SentimentAnalysisUtils.detectSentiment(status.getText)
 
       val tagss = status.getHashtagEntities.map(_.getText.toLowerCase)
-        println(status.getText,  tagss.toString(),sentiment.toString)
+      println(status.getText,  tagss.toString(),sentiment.toString)
       println("=======================================================")
       (status.getText,  tagss.toString(),sentiment.toString)
 
