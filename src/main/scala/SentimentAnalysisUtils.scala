@@ -40,8 +40,8 @@ object SentimentAnalysisUtils {
       sentiments += sentiment.toDouble
       sizes += partText.length
 
-      println("debug: " + sentiment)
-      println("size: " + partText.length)
+      println("Twitter numbers: " + sentiment)
+      println("Twitter Length: " + partText.length)
 
     }
 
@@ -59,9 +59,9 @@ object SentimentAnalysisUtils {
     }
 
 
-    println("debug: main: " + mainSentiment)
-    println("debug: avg: " + averageSentiment)
-    println("debug: weighted: " + weightedSentiment)
+    println("Sentiment main score: " + mainSentiment)
+    println("Sentiment average score: " + averageSentiment)
+    println("Sentiment weighted score: " + weightedSentiment)
 
     weightedSentiment match {
       case s if s <= 0.5 => VERY_NEGATIVE
